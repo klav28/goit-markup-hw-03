@@ -79,20 +79,21 @@ ul {
     color: #2196F3;
 }
 
+.header-bloque {
+    border: #ECECEC solid;
+    border-width: 0 0 1px 0;
+}
+
 .header {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
 
-    display: flex;
-    align-items: center;
-
-    border: #ECECEC solid;
-    border-width: 0 0 1px 0;
-    /* background-color: var(--first-background-color); */
-}
-
-.header-nav {
     display: flex;
     margin: 0 auto;
     gap: 50px;
@@ -100,18 +101,16 @@ ul {
     padding-bottom: 32px;
 }
 
-.header-nav-contacts{
-    display: flex;
+.contacts{
     margin-left: auto;
-    /* padding: 0; ****/
-    gap: 50px;
+    margin-right: 0;
 }
 
 .header-nav-link {
     color: var(--color-primary-dark);
     text-decoration: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-nav-link:hover,
@@ -124,13 +123,10 @@ ul {
 }
 
 .header-contacts-link {
-    font-weight: 500;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
     color: var(--color-primary-middle);
     text-decoration: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-contacts-link:hover,
@@ -138,10 +134,11 @@ ul {
     color: var(--color-accent);
 }
 
+.hero-bloque {
+    background-color: #2F303A;
+}
 
 .hero {
-    background-color: #2F303A;
-    display: flex;
     padding: 200px 250px;
 }
 
@@ -218,6 +215,12 @@ ul {
     gap: 30px;
 }
 
+.card-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .staff {
     background-color: var(--second-background-color);
     padding: 94px 0;
@@ -230,6 +233,8 @@ ul {
 
 .staff-detail {
     background-color: var(--first-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .staff-detail-card {
@@ -289,13 +294,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
-
-.portfolio-project {  
-}
-
-.portfolio-image {
-    display: block;
 }
 
 .portfolio-project-card {
