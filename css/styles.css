@@ -1,0 +1,262 @@
+:root {
+    --font-headers: "Raleway";
+
+    --first-background-color: #ffffff;
+    --second-background-color: #F5F4FA;
+    --color-accent: #2196F3;
+    --color-primary-dark: #212121;
+    --color-primary-middle: #757575;
+    --color-light: #ffffff;
+}
+
+body {
+    background-color: var(--first-background-color);
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    color: var(--color-primary-dark);
+    margin: 0;
+    padding: 0;
+
+}
+
+.hide {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    text-decoration: none;
+}    
+
+.logo-dark-color {
+    color: #000000;
+}
+
+.logo-white-color {
+    color: #ffffff;
+}
+
+.logo-accent {
+    color: #2196F3;
+}
+
+.header {
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    /* background-color: var(--first-background-color); */
+}
+
+.header-nav {
+    list-style: none;
+}
+
+.header-contacts {
+    list-style: none;
+}
+
+.header-nav-link {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: var(--color-primary-middle);
+}
+
+.current-link {
+    color: var(--color-accent);
+}
+
+.header-contacts-link {
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--color-primary-middle);
+    text-decoration: none;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--color-accent);
+}
+
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-light);
+    cursor: pointer;
+    border: 0;
+    background-color: var(--color-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.hero-button:hover {
+    background-color: #188CE8;
+}
+
+.section {
+    /* background-color: var(--first-background-color); */
+}
+
+.benefit-list {
+    list-style: none;
+}
+
+.benefit-name {
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+}
+
+.benefit-detail {
+    line-height: 1.714;
+    color: var(--color-primary-middle);
+}
+
+.filter-button {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.625;
+    background-color: var(--second-background-color);
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-buttons {
+    list-style: none;
+}
+
+.section-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+}
+
+.filter-button:hover,
+.filter-button:active {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-project {
+    /* background-color: var(--first-background-color); */
+    list-style: none;
+}
+
+.portfolio-project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.000;   
+    letter-spacing: 0.06em;
+}
+
+.portfolio-project-type {
+    font-size: 16px;
+    line-height: 1.875;
+
+    color: var(--color-primary-middle);
+}
+
+.benefit {
+    /* background-color: var(--first-background-color); */
+}
+
+.tasks {
+    /* background-color: var(--first-background-color); */
+}
+
+.tasks-list {
+    list-style: none;
+}
+
+.staff {
+    background-color: var(--second-background-color);
+}
+
+.staff-list {
+    list-style: none;
+}
+
+.staff-detail {
+    background-color: var(--first-background-color);
+}
+
+.staff-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+}
+
+.staff-jobtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+
+    color: var(--color-primary-middle);
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-link{
+    font-style: normal;
+    line-height: 1.714;
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.footer-opaque {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover {
+    color: var(--color-accent);
+}
