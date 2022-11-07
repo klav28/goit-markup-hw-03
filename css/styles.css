@@ -19,7 +19,20 @@ body {
     color: var(--color-primary-dark);
     margin: 0;
     padding: 0;
+}
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .hide {
@@ -35,12 +48,20 @@ body {
     width: 1px;
 }
 
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    outline: 1px solid tomato;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     text-decoration: none;
+    margin-right: 93px;
 }    
 
 .logo-dark-color {
@@ -59,15 +80,27 @@ body {
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
     /* background-color: var(--first-background-color); */
 }
 
 .header-nav {
-    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    /* padding: 0; ****/
+    gap: 50px;
 }
 
-.header-contacts {
-    list-style: none;
+.header-nav-contacts{
+    display: flex;
+    margin-left: auto;
+    /* padding: 0; ****/
+    gap: 50px;
 }
 
 .header-nav-link {
@@ -100,6 +133,8 @@ body {
 
 .hero {
     background-color: #2F303A;
+    display: flex;
+    padding: 200px 250px;
 }
 
 .hero-title {
@@ -110,7 +145,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-light);
+    margin-bottom: 30px;
 }
+
 .hero-button {
     font-family: inherit;
     font-weight: 700;
@@ -125,29 +162,84 @@ body {
     background-color: var(--color-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero-button:hover {
     background-color: #188CE8;
 }
 
-.section {
-    /* background-color: var(--first-background-color); */
+.benefit {
+    padding: 94px 0;
 }
 
 .benefit-list {
-    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 .benefit-name {
     font-weight: 700;
     line-height: 1.143;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .benefit-detail {
     line-height: 1.714;
     color: var(--color-primary-middle);
+}
+
+.tasks {
+    padding-bottom: 94px;
+}
+
+.tasks-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.staff {
+    background-color: var(--second-background-color);
+    padding: 94px 0;
+}
+
+.staff-list {
+    display: flex;
+    gap: 30px;
+}
+
+.staff-detail {
+    background-color: var(--first-background-color);
+}
+
+.staff-detail-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.staff-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.staff-jobtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+
+    color: var(--color-primary-middle);
+}
+
+.portfolio {
+    padding: 94px 0;
 }
 
 .filter-button {
@@ -159,10 +251,17 @@ body {
     border: 0;
     border-radius: 4px;
     cursor: pointer;
+    padding: 6px 22px;
+    min-width: 73px;
 }
 
 .filter-buttons {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 94px; */
+    padding-bottom: 50px;
+    /* margin: 0; */
+    gap: 8px;
 }
 
 .section-header {
@@ -170,6 +269,7 @@ body {
     font-size: 36px;
     line-height: 1.166;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .filter-button:hover,
@@ -179,9 +279,25 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-project {
-    /* background-color: var(--first-background-color); */
-    list-style: none;
+.portfolio-list {
+    /* list-style: none; */
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0; */
+    gap: 30px;
+}
+
+.portfolio-project {  
+}
+
+.portfolio-image {
+    display: block;
+}
+
+.portfolio-project-card {
+    padding: 20px 24px;
+    border: #EEEEEE solid;
+    border-width: 0 1px 1px 1px;
 }
 
 .portfolio-project-name {
@@ -194,56 +310,16 @@ body {
 .portfolio-project-type {
     font-size: 16px;
     line-height: 1.875;
-
-    color: var(--color-primary-middle);
-}
-
-.benefit {
-    /* background-color: var(--first-background-color); */
-}
-
-.tasks {
-    /* background-color: var(--first-background-color); */
-}
-
-.tasks-list {
-    list-style: none;
-}
-
-.staff {
-    background-color: var(--second-background-color);
-}
-
-.staff-list {
-    list-style: none;
-}
-
-.staff-detail {
-    background-color: var(--first-background-color);
-}
-
-.staff-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.187;
-    text-align: center;
-}
-
-.staff-jobtitle {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.187;
-    text-align: center;
-
     color: var(--color-primary-middle);
 }
 
 .footer {
     background-color: #2F303A;
+    padding: 60px 0;
 }
 
 .footer-list {
-    list-style: none;
+    margin-top: 20px;
 }
 
 .footer-link{
